@@ -3,8 +3,7 @@ public class Main {
     public static void main(String[] args) {
 
         BonusMilesService service = new BonusMilesService();
-        int price = 10_000;
-        int miles = service.calculate(price);
+        int miles = service.calculate(10000);
         System.out.println(miles);
 
     }
@@ -13,9 +12,7 @@ public class Main {
 
 public class BonusMilesService {
     
-    public int calculate(int cost) {
-
-        int price = 10_000;
+    public int calculate(int price) {
         int bonus = 20;
         int miles = price / bonus;
 
